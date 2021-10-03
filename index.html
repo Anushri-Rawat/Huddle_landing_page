@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    *{
+      padding:0;margin:0;
+      box-sizing:border-box;
+    }
+    body {
+      min-height: 100vh;
+      background-size: center;
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: #674BB1;
+    margin: 2.5rem 3rem;
+}
+.container{
+  overflow:hidden;
+}
+   .container-body{
+     margin:50px 0;
+     display:flex;
+     gap:60px;
+   }
+.container-body img{
+     max-width:100%;
+   }
+   .content{
+     flex-basis:35%;
+     margin-top:4%;
+     color:white;
+   }
+   .content h1{
+     font-size:36px;
+     font-family: 'Poppins', sans-serif;
+     font-weight:600;
+     line-height:1.5;
+     margin-bottom:20px;
+    
+   }
+   .content p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    font-size:15px;
+   }
+   input{
+     width:160px;
+     padding:15px;
+     border-radius:200px;
+     color:hsl(257, 40%, 49%);
+     border:none;
+     font-size:16px;
+     margin:20px 0;
+     box-shadow:4px 5px 10px rgba(0,0,0,0.5);
+   }
+   input:hover{
+    background:hsl(300, 69%, 71%);
+     color:white;
+   }
+   .footer{
+     width:100vw;
+     display:flex;
+     margin-left:75%;
+   }
+   .icons{
+     margin-right:5%;
+     flex-basis:15%;
+     display: flex;
+     justify-content: space-between;
+   }
+   .icons .fa{
+     border-radius:50%;
+     color:white;
+     border:1px solid white;
+    border-radius: 50%;
+    padding:5px;
+    width: 45px;
+    font-size: 30px;
+    text-align: center;
+   }
+   .icons .fa:hover{
+    color:hsl(300, 69%, 71%);
+    border-color:hsl(300, 69%, 71%);
+   }
+   @media (max-width:500px){
+    body {
+    background-image: url(/images/bg-mobile.svg);
+    background-size:100% 49%;
+    background-repeat:no-repeat;
+    margin: 2rem;
+    text-align: center;
+  }
+  .header{
+    text-align:left;
+  }
+  .header img{
+    width:220px;
+  }
+  .content h1{
+     font-size:28px;
+     font-weight:600;
+     line-height:1.2;
+     margin-bottom:20px;
+    
+   }
+    
+  }
+  @media (max-width:900px){
+    .container-body{
+    flex-direction: column;
+  }
+  }
+  @media (max-width:650px)
+  {.footer{
+       width:100%;
+       margin-left:0;
+     justify-content: center;
+   }
+   .icons .fa{
+     margin:0 8px;
+     border-radius:50%;
+     color:white;
+     border:1px solid white;
+    padding:5px;
+    width: 40px;
+    font-size: 28px;
+    text-align: center;
+   }
+  }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="./images/logo.svg" alt="website logo">
+  </div>
+  <div class="container-body">
+    <div class="illustration">
+     <img src="./images/illustration-mockups.svg" alt="Illustration">
+    </div>
+    <div class="content">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion. </p>
+        <input type="button" value="Register">
+    </div>
+  </div>
+  <div class="footer">
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
